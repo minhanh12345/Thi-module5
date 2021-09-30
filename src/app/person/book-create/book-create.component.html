@@ -1,0 +1,67 @@
+
+<!--<h1>create</h1>-->
+<!--<form [formGroup]="personForm" (ngSubmit)="submit()">-->
+<!--  <table>-->
+<!--    <tr>-->
+<!--      <td>Idcode:</td>-->
+<!--      <td><input type="number" formControlName="idCode"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>name:</td>-->
+<!--      <td><input type="text" formControlName="name"></td>-->
+<!--      <span *ngIf="!personForm.get('name')?.valid &&  personForm.touched" style="color: red">Name minLenght >6</span>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>address</td>-->
+<!--      <td><input type="number" formControlName="address"></td>-->
+<!--      <span *ngIf="!personForm.get('address')?.valid &&  personForm.touched" style="color: red">not null</span>-->
+
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>phone</td>-->
+<!--      <td><input type="text" formControlName="phone"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Gmail</td>-->
+<!--      <td><input type="text" formControlName="gmail"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td></td>-->
+<!--      <td><button>Tạo mới</button></td>-->
+<!--    </tr>-->
+<!--  </table>-->
+<!--</form>-->
+
+
+<section id="contact" class="contact section-bg">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Create</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      </div>
+      <div class="col-lg-12 col-md-7">
+        <form [formGroup]="personForm" (ngSubmit)="submit()" method="post"  class="php-email-form">
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" formControlName="id"  placeholder="id" >
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="title" class="form-control"  placeholder="title" >
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" formControlName="author"  placeholder="author" >
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" formControlName="description" class="form-control"  placeholder="description" >
+          </div>
+
+          <div class="text-center"><button >Tạo mới</button></div>
+        </form>
+      </div>
+
+    </div>
+
+
+</section><!-- End Contact Us Section -->
